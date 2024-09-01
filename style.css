@@ -1,0 +1,102 @@
+#calculator {
+    width: 220px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1e1e2f; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a40; 
+    color: #ffffff; 
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#keys button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#keys button:hover {
+    background-color: #0056b3; 
+}
+
+#keys button:active {
+    background-color: #003d80; 
+    transform: scale(0.98);
+}
+
+#keys button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+
+#keys button.operator {
+    background-color: #FF5733; 
+}
+
+#keys button.operator:hover {
+    background-color: #e04e2a; 
+}
+
+#keys button.operator:active {
+    background-color: #c84321; 
+    transform: scale(0.98);
+}
+#title {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff; 
+    margin-bottom: 20px;
+    font-weight: 600; 
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2C3E50, #3498DB); 
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
